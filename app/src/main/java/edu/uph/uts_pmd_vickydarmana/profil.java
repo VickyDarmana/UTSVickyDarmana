@@ -5,39 +5,48 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
+import android.widget.Button;
+import android.widget.EditText;
 import android.widget.LinearLayout;
+import android.widget.Toast;
 
 public class profil extends AppCompatActivity {
-
-    LinearLayout button1;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_profil);
-        button1 = (LinearLayout) findViewById(R.id.button1);
-        button1.setOnClickListener(v -> {
-            Log.d("Submit", "Masuk ke tampilanawal");
-            Intent intent = new Intent(profil.this, MainActivity.class);
-            startActivity(intent);
-        });
+
+
+        Button buttonLayout = findViewById(R.id.jasonn);
+
+
+        buttonLayout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                EditText studentIdEditText = findViewById(R.id.id);
+                EditText namaEditText = findViewById(R.id.nama);
+                EditText jurusanEditText = findViewById(R.id.jurusan);
+                EditText tahunMasukEditText = findViewById(R.id.tahun);
+
+                String studentId = studentIdEditText.getText().toString();
+                String nama = namaEditText.getText().toString();
+                String jurusan = jurusanEditText.getText().toString();
+                String tahunMasuk = tahunMasukEditText.getText().toString();
+
+
+                String toastMessage = "Student ID: " + studentId + "\nNama: " + nama +
+                        "\nJurusan: " + jurusan + "\nTahun Masuk: " + tahunMasuk;
+
+                Toast.makeText(profil.this, toastMessage, Toast.LENGTH_SHORT).show();
+
+                Intent intent = new Intent(profil.this, MainActivity.class);
+                startActivity(intent);
+            }
+        }
+
+        );
     }
-
-//    @Override
-//    public <View> void onClick(View view){
-//        showToast();
-//    }
-//
-//    private void showToast(){
-//        String studentid = studentid.getText().toString();
-//        String nama = nama.getText().toString();
-//        String jurusan = jurusan.getText().toString();
-//        String tahunmasuk = tahunmasuk.getText().toString();
-//        String status = status.getText().toString();
-//        String kampus = kampus.getText().toString();
-//
-//        String message = "StudentID: " + studentid + " | "Nama: " + nama + " | "Jurusan: " + jurusan + " | "TahunMasuk: " + tahunmasuk + " | "Status: " + status + " | "Kampus: " + kampus;
-//    }
 }
-
 

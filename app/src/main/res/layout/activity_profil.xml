@@ -35,7 +35,7 @@
             android:orientation="vertical">
 
             <EditText
-                android:id="@+id/editTextText"
+                android:id="@+id/id"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="5pt"
@@ -48,7 +48,7 @@
                 android:textColor="@color/black" />
 
             <EditText
-                android:id="@+id/editTextText2"
+                android:id="@+id/nama"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="5pt"
@@ -61,7 +61,7 @@
                 android:textColor="@color/black" />
 
             <EditText
-                android:id="@+id/editTextText3"
+                android:id="@+id/jurusan"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="5pt"
@@ -74,7 +74,7 @@
                 android:textColor="@color/black" />
 
             <EditText
-                android:id="@+id/editTextText4"
+                android:id="@+id/tahun"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="5pt"
@@ -102,7 +102,7 @@
                 android:textStyle="bold" />
 
             <EditText
-                android:id="@+id/editTextText5"
+                android:id="@+id/aktif"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -118,7 +118,7 @@
             android:orientation="vertical">
 
             <EditText
-                android:id="@+id/editTextText6"
+                android:id="@+id/kampus"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="5pt"
@@ -132,13 +132,12 @@
         </LinearLayout>
 
         <LinearLayout
-            android:id="@+id/button1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
             <Button
-                android:id="@+id/button2"
+                android:id="@+id/jasonn"
                 android:layout_width="149dp"
                 android:layout_height="wrap_content"
                 android:text="Submit" />
