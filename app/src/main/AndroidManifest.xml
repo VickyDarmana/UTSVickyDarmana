@@ -13,6 +13,12 @@
         android:theme="@style/Theme.UTS_PMD_VickyDarmana"
         tools:targetApi="31">
         <activity
+            android:name=".profil"
+            android:exported="false" />
+        <activity
+            android:name=".layout_sep"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
