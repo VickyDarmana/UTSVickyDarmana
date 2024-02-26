@@ -7,9 +7,10 @@
     tools:context=".MainActivity">
 
     <LinearLayout
+        android:id="@+id/tampilanawal"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@color/blue"
+        android:background="@color/darkblue"
         android:orientation="vertical"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.333"
@@ -123,7 +124,7 @@
         <LinearLayout
             android:id="@+id/tampilan1"
             android:layout_width="match_parent"
-            android:layout_height="101dp"
+            android:layout_height="93dp"
             android:layout_margin="5pt"
             android:background="@color/lightblue"
             android:orientation="vertical">
@@ -133,7 +134,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="5pt"
-                android:layout_marginTop="12pt"
+                android:layout_marginTop="10pt"
                 android:text="2216"
                 android:textColor="@color/gold"
                 android:textSize="20dp"
@@ -162,7 +163,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="5pt"
-                android:layout_marginTop="12pt"
+                android:layout_marginTop="10pt"
                 android:text="Profil"
                 android:textColor="@color/gold"
                 android:textSize="20dp"

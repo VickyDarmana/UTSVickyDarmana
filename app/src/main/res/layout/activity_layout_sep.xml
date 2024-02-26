@@ -22,7 +22,7 @@
                 android:id="@+id/textView13"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:paddingLeft="53pt"
+                android:textAlignment="center"
                 android:paddingTop="7pt"
                 android:text="Riwayat SEP Poin"
                 android:textSize="20dp"
